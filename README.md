@@ -1,4 +1,4 @@
-# julia-genomescope
+# julia-pacbiohifiKmerprofile.jl
 
 - julia implementation of the kmer profiles and genomescope.
 - genomscope maths to include and will plot the genomescope profiles for both the assembled genomes and pacbiohifireads.
