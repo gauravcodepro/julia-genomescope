@@ -5,6 +5,7 @@
 # preparing the kmer profile of the pacbiohifi reads 
 # will integrate the genomscope calculation and will prepapre a plot for the kmer profile for genomes and pacbiohifi reads
 
+using Plots
 function pacbioKmerspace(pacbiohifireads, kmerspace)
     header = Any[]
     sequence = Any[]
@@ -57,5 +58,11 @@ function pacbioKmerspace(pacbiohifireads, kmerspace, threshold)
         if count(==uniquetagarray[i], sequencetage) > thresholdplaceholder
         counttag[uniquetagarray[i]] = count(==unqiuetagarray[i], sequencetag)
     end
-end 
+    # added the plot function for the variants kmers 
+      kmerplotvariantX = [parse(Int64,i) for i in values(counttag)]
+      kmerplotvariantY = [i for i in keys(countag)]
+      kmervariantplot = plot(kmerplotvariantX, label = kmerplotvariantY)
+      savefig("kmerplotvariant.png")
+      savefig(kmerplotvariant,"kmervariantplot.pdf")
+      end 
 end
