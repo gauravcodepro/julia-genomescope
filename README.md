@@ -11,9 +11,4 @@ include pacbiohifiKmerprofile.jl
 ```
 - also included in the [PacbioHifi MVC application that i am writing and standalone and syncs with the Pacbiohifi Sequencing](https://github.com/gauravcodepro/julia-pacbiohifi-mvc-app). All the profiles in one application.  
 
-Gaurav \
-Academic Staff Member \
-Bioinformatics \
-Institute for Biochemistry and Biology \
-University of Potsdam \
-Potsdam,Germany
+Gaurav 
