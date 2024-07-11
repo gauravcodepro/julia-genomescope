@@ -1,6 +1,5 @@
 #! usr/bin/env julia
 # Author Gaurav
-# Universitat Potsdam
 # Date 2024-7-3
 # preparing the kmer profile of the pacbiohifi reads 
 # will integrate the genomscope calculation and will prepapre a plot for the kmer profile for genomes and pacbiohifi reads
